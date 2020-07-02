@@ -29,13 +29,13 @@ router.post('/', (req, resp) => {
     if (state === "get_balance") {
 
         // ...
-    } else if (state === "transfer") {
+    } else if (state === "transfer_fund") {
         console.log("Initiating transfer...");
 
         const transferSlots = [
             "_ACCOUNT_FROM_",
             "_ACCOUNT_TO_",
-            "_TRANSFER_AMOUNT_"
+            "_FUND_AMT_"
         ];
         const [source, destination, amount] = transferSlots.map(
             slot => bodychanges.slots[slot].values[0].tokens

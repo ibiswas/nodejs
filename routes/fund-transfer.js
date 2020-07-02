@@ -29,7 +29,7 @@ router.post('/', (req, resp) => {
     if (state === "get_balance") {
 
         // ...
-    } else if (state === "transfer_fund") {
+    } else if (state === "tansfer_fund") {
         console.log("Initiating transfer...");
 
         const transferSlots = [

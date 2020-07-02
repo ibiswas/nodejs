@@ -40,7 +40,7 @@ router.post('/', (req, resp) => {
         const [source, destination, amount] = transferSlots.map(
             slot => bodychanges.slots[slot].values[0].tokens
         );
-        const transferData = { source, destination, amount };
+        const transferData = { source, destination, amount, value:'transfer' };
 
         bodychanges.slots["_TRANSFER_"] = {};
         Object.assign(bodychanges.slots["_TRANSFER_"], {

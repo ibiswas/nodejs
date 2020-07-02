@@ -33,8 +33,8 @@ router.post('/', (req, resp) => {
         console.log("Initiating transfer...");
 
         const transferSlots = [
-            "_ACCOUNT_FROM_",
-            "_ACCOUNT_TO_",
+            "_AMOUNT_FROM_",
+            "_AMOUNT_TO_",
             "_FUND_AMT_"
         ];
         const [source, destination, amount] = transferSlots.map(
